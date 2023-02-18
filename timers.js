@@ -10,15 +10,3 @@ function countDown(start) {
         }
     }, 1000);
 }
-function randomNumGame() {
-    let attempts = 0;
-    let num;
-    let timer = setInterval(function () {
-        num = Math.random();
-        attempts++;
-        if (num > 0.75) {
-            clearInterval(timer);
-            console.log("It took " + attempts + " tries!");
-        }
-    }, 1000);
-}
